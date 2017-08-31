@@ -1,5 +1,5 @@
 #ARTICLE-GATHER-DOWNLOAD-ANALYZE
-#TODO: Change txt output to MySQL database writes
+#todo -> Change txt output to MySQL database writes
 from __future__ import print_function
 import newspaper
 import datetime
@@ -48,7 +48,7 @@ def scrape():
             try:
                 print(article.title, file=open(paper.brand+".txt", "a"))
             except:
-                #DO NOTHING
+                pass
     print("PAPERS SEPARATED")
 
     os.chdir('..')#CF: app/COUNTS/
