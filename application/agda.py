@@ -1,9 +1,9 @@
 #ARTICLE-GATHER-DOWNLOAD-ANALYZE
+from __future__ import print_function
 import newspaper
 import datetime
 import os
 import nltk
-from __future__ import print_function
 
 from newspaper import news_pool
 from nltk.tokenize import RegexpTokenizer
@@ -44,7 +44,10 @@ def scrape():
 
     for paper in papers:
         for article in paper.articles:
-            print(article.title, file=open(paper.brand+".txt", "a"))
+            try:
+                print(article.title, file=open(paper.brand+".txt", "a"))
+            except:
+                #DO NOTHING
     print("PAPERS SEPARATED")
 
     os.chdir('..')#CF: app/COUNTS/
