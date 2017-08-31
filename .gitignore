@@ -1,4 +1,7 @@
-news-focus-env
+#Virtualenv
+news-focus
+
+#Cache/Other
 .DS_Store
 __pycache__
 
