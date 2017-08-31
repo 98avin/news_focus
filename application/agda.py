@@ -1,4 +1,5 @@
 #ARTICLE-GATHER-DOWNLOAD-ANALYZE
+#TODO: Change txt output to MySQL database writes
 from __future__ import print_function
 import newspaper
 import datetime
