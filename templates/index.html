@@ -1,0 +1,24 @@
+<style>
+body{
+	background-color:grey
+}
+p,ul{
+	color:white;
+}
+</style>
+
+<p>
+Top 10 Most Found Words in Various News Site Headlines Across the Web
+</p>
+<ul>
+{% for x in dict %}
+<li>
+<b>{{x}}</b>
+<ol>
+{% for y in dict[x] %}
+<li>{{y}}</li>
+{% endfor %}
+</ol>
+</li>
+{% endfor %}
+</ul>
